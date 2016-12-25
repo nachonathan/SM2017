@@ -2,6 +2,13 @@ $(document).foundation();
 
 new WOW().init();
 
+// Preloader //
+
+$(window).load(function() {
+    // Animate loader off screen
+    $(".se-pre-con").fadeOut("slow");;
+});
+
 // Mobile Menu //
 
 $(document).ready(function() {
@@ -87,3 +94,5 @@ $(function() {
     }
   });
 });
+
+

@@ -15,6 +15,7 @@
 </head>
 
 <body>
+  <div class="se-pre-con"></div>
   <header class="py1"> 
     <div class="row expanded">
       <div class="small-7 medium-4 large-3 columns">
@@ -60,7 +61,7 @@
     <div class="row expanded p1">
       <div class="small-12 columns text-center border p3 z2 relative">
         <div class="row">
-          <div class="small-12 medium-7 medium-centered large-4 large-offset-4 columns lockup text-center p0 wow zoomIn" data-wow-duration="3s">
+          <div class="small-12 medium-7 medium-centered large-4 large-offset-4 columns lockup text-center p0 wow fadeInUp" data-wow-duration="2s" data-wow-delay="1s">
         <p class="subhead serif allcaps spacing2 white mb1">October 3-6, 2017</p>
         <div class="border p2 mb1">
           <img class="full" src="images/sm-hero.svg" alt="Sales Mastery - 25 years - 1992 to 2017"/>
@@ -119,7 +120,7 @@
   <!--Highlights Section-->
   <section id="Highlights" class="bgblack bgimage relative" style="background-image:url(images/videobg.jpg);">
     <div class="goverlay absolute xy0 op7 table text-center w100" style="min-height: 436px;">
-      <div class="td middle">
+      <div class="td middle wow fadeInUp" data-wow-duration="1s">
         <img src="images/2016.png" class="w100 op3" style="max-width: 700px; min-width: 280px;"/>
       </div>
     </div>
@@ -127,8 +128,8 @@
       <div class="small-12 columns border relative z2">
         <div class="row">
           <div class="small-12 columns text-center table w100 mh400">
-            <div class="td middle wow fadeInUp" data-wow-duration="1s" >
-              <a id="video" data-open="exampleModal2">
+            <div class="td middle wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s" >
+              <a id="video" data-open="exampleModal2" class="block hoverup">
                 <img src="images/play.svg" class="mb1" width="120" alt="Play"/>
                 <p class="sans-serif allcaps spacing4 white rem1q">2016 Highlights</p>  
               </a>
@@ -147,8 +148,8 @@
           <h3 class="sans-serif rem1h spacing2 allcaps m0">$795 - advanced pricing</h3>
           <p class="serif italic subhead spacing2 allcaps mb2">ends march 31st, 2017</p>
           <ul class="list-reset button-list mb2">
-            <li class="inlineblock mr1"><a href="#" class="button button-primary wow fadeInUp" data-wow-duration="1s" data-wow-delay=".25s"><i class="fa fa-ticket"></i>&nbsp;Register now</a></li>
-            <li class="inlineblock"><a href="#" class="button button-outline wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">Group leader kit</a></li>
+            <li class="inlineblock mr1"><a href="#" class="button button-primary hoverup wow fadeInUp" data-wow-duration="1s" data-wow-delay=".25s"><i class="fa fa-ticket"></i>&nbsp;Register now</a></li>
+            <li class="inlineblock"><a href="#" class="button button-outline hoverup wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">Group leader kit</a></li>
           </ul>
           <p class="serif italic">Group pricing is available. Please <a href="#" class="blue">contact us</a>.</p>
         </div>
@@ -171,7 +172,7 @@
       <div class="small-12 medium-6 columns bgimage" style="background-image: url(images/venu002.jpg);">
         <div class="table mh600 w100 text-center relative z2">
           <div class="td middle wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
-            <a href="#" class="button button-primary">Learn more</a>
+            <a href="#" class="button button-primary hoverup">Learn more</a>
           </div>
         </div>
       </div>
@@ -196,12 +197,11 @@
     </div>
   </footer>
   <!--Video Modal-->
-  <div class="reveal large" id="exampleModal2" data-reveal data-animation-in="fade-in" data-animation-out="fade-out" data-reset-on-close="true">
+  <div class="reveal large text-center" id="exampleModal2" data-reveal data-animation-in="fade-in" data-animation-out="fade-out" data-reset-on-close="true">
     <iframe src="https://player.vimeo.com/video/187372069?title=0&byline=0&portrait=0" style="margin: 0 auto;" width="100%" height="500" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+     <a class="close-reveal-modal mt1 allcaps spacing1 white sans-serif"  data-close="exampleModal2" aria-label="Close">Close</a>
   </div>
-          
-  
-    
+        
   
   
   

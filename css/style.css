@@ -675,6 +675,17 @@ a.white:hover {
   text-transform: uppercase;
 }
 
+.button-primary:hover {
+  color: #ffffff; 
+}
+
+.button-primary {
+  color: #ffffff !important;
+}
+
+.register-mob .button {
+  width: 100%;
+}
 
 .h100 {
   height: 80px; 
@@ -685,14 +696,11 @@ a.white:hover {
     bottom: 0;
     left: 0;
     right: 0;
-    padding: 1rem;
     background: #00a7f4;
     color: #ffffff !important;
+    width: 100%; 
 }
 
-.register-mob a {
-  color: #ffffff;; 
-}
 
 @media screen and (max-width: 23.75em) {
   .xsmall-hidden {
@@ -807,6 +815,21 @@ a.white:hover {
 
 /* Large and up */
 @media screen and (min-width: 64em) {
+  
+  section > div.p1 {
+    padding: 2rem;
+  }
+  
+  #Highlights > .goverlay {
+    min-height: 468px !important; 
+  }
+  
+  #Venue .xy1 {
+    top: 2rem; 
+    bottom: 2rem;
+    left: 2rem; 
+    right: 2rem;
+  }
   
   .m-drawer,
   #menu-drawer {

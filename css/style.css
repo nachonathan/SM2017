@@ -825,6 +825,7 @@ a.white:hover {
   
   #Highlights > .goverlay {
     min-height: 468px !important; 
+    height: 468px !important; 
   }
   
   #Venue .xy1 {

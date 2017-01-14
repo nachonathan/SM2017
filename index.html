@@ -20,28 +20,6 @@
 
 <body>
   <div class="se-pre-con"></div>
-  <header class="py1"> 
-    <div class="row expanded">
-      <div class="small-7 medium-4 large-3 columns">
-        <img src="images/smlogo.svg" class="full pth" style="max-width: 220px;" alt="Sales Mastery 2017" />
-      </div>
-      <div class="small-5 medium-8 large-6 columns text-center">
-        <div id="menu-drawer" class="text-left all-caps menu-button">
-          <a class="nav-toggle">Menu<span></span></a>
-        </div>
-        <ul class="list-reset show-for-large mainnav">
-          <li class="inline mr1 sans-serif spacing1 allcaps hide-for-large medium"><a href="#"><i class="fa fa-ticket"></i>&nbsp;Register</a></li>
-          <li class="inline mr1 sans-serif spacing1 allcaps lh42 bold"><a href="#Speakers">Speakers</a></li>
-          <li class="inline mr1 sans-serif spacing1 allcaps lh42 bold"><a href="#Highlights">Highlights</a></li>
-          <li class="inline mr1 sans-serif spacing1 allcaps lh42 bold"><a href="#Pricing">Pricing</a></li>
-          <li class="inline mr1 sans-serif spacing1 allcaps lh42 bold"><a href="#Venue">Venue</a></li>
-        </ul>
-      </div>
-      <div class="small-12 medium-3 large-3 columns text-center show-for-large">
-        <a href="#" class="button button-outline m0 medium"><i class="fa fa-ticket"></i>&nbsp;Register</a>
-      </div>
-    </div>
-  </header>
   <!-- Mobile Menu -->
   <div id="overlay"></div>
   <aside class="m-drawer">
@@ -55,22 +33,24 @@
           <li class="mb1 sans-serif spacing1 allcaps bold"><a href="#Highlights">Highlights</a></li>
           <li class="mb1 sans-serif spacing1 allcaps bold"><a href="#Pricing">Pricing</a></li>
           <li class="sans-serif spacing1 allcaps bold"><a href="#Venue">Venue</a></li>
-          <li class="register-mob"><a href="#" class="button button-primary white m0"><i class="fa fa-ticket"></i>&nbsp;Register now</a></li>
+          <li class="register-mob"><a href="#" class="button button-primary white m0">Group leader kits</a></li>
         </ul>
     </div>
   </aside>
   <!--Hero Section-->
   <section class="relative hero">
-    <div class="goverlay absolute xy0 op7"></div>
+    <div id="gradient" class="overlay absolute xy0 op5"></div>
     <div class="row expanded p1">
-      <div class="small-12 columns text-center border p3 z2 relative">
+      <div class="lockup small-12 columns text-center relative p3 z3">
         <div class="row">
           <div class="small-12 medium-7 medium-centered large-4 large-offset-4 columns lockup text-center p0 wow fadeInUp" data-wow-duration="2s" data-wow-delay="1s">
         <p class="subhead serif allcaps spacing2 white mb1">October 3-6, 2017</p>
         <div class="border p2 mb1">
-          <img class="full" src="images/sm-hero.svg" alt="Sales Mastery - 25 years - 1992 to 2017"/>
+          <img class="full mb1 wow fadeInLeft" src="images/Asset%203.svg" data-wow-duration="2s" data-wow-delay="1s" alt="Sales Mastery"/>
+          <img class="full mb1 wow zoomIn" src="images/Asset%204.svg" data-wow-duration="2s" data-wow-delay="1s" alt="25 years"/>
+          <img class="full wow wow fadeInRight" src="images/Asset%205.svg" data-wow-duration="2s" data-wow-delay="1s" alt="1992 to 2017"/>
         </div>
-        <p class="subhead serif allcaps spacing2 white mb1">San Diego, California</p>
+        <p class="subhead serif allcaps spacing2 white mb2">San Diego, California</p>
         <div id="clockdiv" class="text-center xsmall-hidden">
           <div class="inlineblock mr1">
             <span class="days white bold sans-serif rem2"></span>
@@ -93,11 +73,39 @@
         </div>
       </div>
     </div>
+    
+    <div class="mute white allcaps small sans-serif " onclick="document.getElementById('bgvid').muted = !document.getElementById('bgvid').muted">
+      click for sound
+    </div>
+    
     <video playsinline autoplay muted loop poster="images/hero.jpg" id="bgvid">
-      <source src="images/smrecap2.webm" type="video/webm">
-      <source src="images/smrecap2.mp4" type="video/mp4">
+      <source src="images/sales_bg_720.webm" type="video/webm">
+      <source src="images/sales_bg_720.mp4" type="video/mp4">
     </video>
   </section>
+  <!-- Nav -->
+  <header class="py1 wow fadeInUp stick" data-wow-duration="1s" style="border-bottom: 1px solid #cccccc;"> 
+    <div class="row expanded">
+      <div class="small-7 medium-4 large-3 columns">
+        <img src="images/smlogo.svg" class="full pth" style="max-width: 220px;" alt="Sales Mastery 2017" />
+      </div>
+      <div class="small-5 medium-8 large-6 columns text-center">
+        <div id="menu-drawer" class="text-left all-caps menu-button">
+          <a class="nav-toggle">Menu<span></span></a>
+        </div>
+        <ul class="list-reset show-for-large mainnav">
+          <li class="inline mr1 sans-serif spacing1 allcaps hide-for-large medium"><a href="#"><i class="fa fa-ticket"></i>&nbsp;Register</a></li>
+          <li class="inline mr1 sans-serif spacing1 allcaps lh42"><a href="#Speakers">Speakers</a></li>
+          <li class="inline mr1 sans-serif spacing1 allcaps lh42"><a href="#Highlights">Highlights</a></li>
+          <li class="inline mr1 sans-serif spacing1 allcaps lh42"><a href="#Pricing">Pricing</a></li>
+          <li class="inline mr1 sans-serif spacing1 allcaps lh42"><a href="#Venue">Venue</a></li>
+        </ul>
+      </div>
+      <div class="small-12 medium-3 large-3 columns text-center show-for-large">
+        <a href="#" class="button button-outline m0 medium">Group leader kits</a>
+      </div>
+    </div>
+  </header>
   <!--Main Section-->
   <section class="psection bgimage2">
     <div class="row compress">
@@ -107,8 +115,7 @@
       <div class="small-12 medium-12 large-6 columns pt2 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".25s">
         <div class="wrapper">
           <h1 class="sans-serif allcaps rem2 spacing2 bold">Sales Mastery 2017</h1>
-          <p class="serif text mb1">For 24 years, Sales Mastery has been the place that loan officers have taken their businesses from average to awesome. For those not only seeking a competitive edge in their origination career, but also balance in their personal life. The longest running personal and professional development event in the mortgage industry, Sales Mastery has garnered a reputation for delivering fresh ideas, implementable strategies, and innovative training from sought-after keynote speakers, unique business influencers, and standout industry experts.</p>
-          <p class="serif text">Find out why over 50,000 loan officers and Agents have attended Sales Mastery and make the decision to focus on creating the business and life that you’ve always dreamed of having.</p>
+          <p class="serif text mb1">We’re thrilled to celebrate the 25th anniversary of Sales Mastery by kicking things up a notch and welcoming you to a new and exciting event! Designed to help your business breakthrough the challenges in front of you and take off to new heights. Sales Mastery 2017 is focused on bringing you fresh ideas, easy to implement strategies, and innovative training from some of the most unique, standout influencers and experts in the industry. Todd Duncan and his peers will guide your team of industry leaders and mortgage professionals with inspiration and instruction created specifically to help you move the needle on your company from average to incredible. And this year, we’re hitting the road to bring you the finest event from the country’s finest city—San Diego! Become one of the more 50,000 officers and agents in the industry who are taking a step towards breaking through to the business and life you’ve always dreamed of having!</p>
         </div>
       </div>
     </div>

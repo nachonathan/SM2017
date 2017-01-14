@@ -1,3 +1,22 @@
+header {
+  background: #fff;
+}
+
+.reveal-overlay {
+    background-color: #000;
+}
+
+.fixed {
+    position: fixed;
+    top:0; left:0;
+    width: 100%; 
+    z-index: 20;
+}
+
+#clockdiv {
+  display: none;
+}
+
 .no-js #loader { display: none;  }
 .js #loader { display: block; position: absolute; left: 100px; top: 0; }
 .se-pre-con {
@@ -27,7 +46,7 @@ p {
 }
 
 a {
-  color: #00a7f4;
+  color: #09a3a6;
   -webkit-transition: all .25s ease-out,color .25s ease-out;
   transition: all .25s ease-out,color .25s ease-out;
 }
@@ -147,7 +166,7 @@ a:hover {
 }
 
 .mainnav a:hover {
-  color: #00a7f4;
+  color: #09a3a6;
 }
 
 .p0 {
@@ -339,8 +358,8 @@ a:hover {
   text-transform: uppercase; 
   letter-spacing: 2px; 
   font-family: 'futura-pt','Muli', sans-serif; 
-  border: 2px solid #00a7f4; 
-  background: #00a7f4; 
+  border: 2px solid #09a3a6; 
+  background: #09a3a6; 
   min-width: 220px; 
   font-weight: 700;
 }
@@ -351,23 +370,29 @@ a:hover {
 
 .button-outline {
   background: #ffffff; 
-  color: #00a7f4; 
+  color: #09a3a6; 
 }
 
 .blue {
-  color: #00a7f4;
+  color: #09a3a6;
 }
 
 .bgblue {
-  background: #00a7f4;
+  background: #09a3a6;
 }
 
 .goverlay {
-  background: #ff4800;
-  background: -moz-linear-gradient(top,  #ff4800 0%, #6d166d 100%);
-  background: -webkit-linear-gradient(top,  #ff4800 0%,#6d166d 100%);
-  background: linear-gradient(to bottom,  #ff4800 0%,#6d166d 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff4800', endColorstr='#6d166d',GradientType=0 );
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fdcf0f+0,e2098f+100 */
+  background: #fdcf0f; /* Old browsers */
+  background: -moz-linear-gradient(top,  #fdcf0f 0%, #e2098f 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  #fdcf0f 0%,#e2098f 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  #fdcf0f 0%,#e2098f 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdcf0f', endColorstr='#e2098f',GradientType=0 ); /* IE6-9 */
+
+}
+
+.overlay {
+  background-blend-mode: screen;
 }
 
 .lh42 {
@@ -521,13 +546,13 @@ a.white:hover {
 }
 
 .nav-toggle:hover {
-  color: #00a7f4;
+  color: #09a3a6;
 }
 
 .nav-toggle:hover span,
 .nav-toggle:hover span:before,
 .nav-toggle:hover span:after {
-  background: #00a7f4;
+  background: #09a3a6;
 }
 
 .nav-toggle:hover span:before {
@@ -589,7 +614,7 @@ a.white:hover {
 }
 
 .m-drawer .m-close:hover {
-  color: #00a7f4;
+  color: #09a3a6;
 }
 
 .m-drawer a {
@@ -601,7 +626,7 @@ a.white:hover {
 
 .m-drawer a:hover,
 .m-drawer .menu .menu-item a:hover {
-  color: #00a7f4;
+  color: #09a3a6;
 }
 
 .m-drawer.m-drawer--is-open {
@@ -647,7 +672,7 @@ a.white:hover {
   font-size: .875rem;
   letter-spacing: 1px;
   font-weight: 700;
-  color: #00a7f4;
+  color: #09a3a6;
 }
 
 .m-drawer ul.social-list,
@@ -699,7 +724,7 @@ a.white:hover {
     bottom: 0;
     left: 0;
     right: 0;
-    background: #00a7f4;
+    background: #09a3a6;
     color: #ffffff !important;
     width: 100%; 
 }
@@ -784,11 +809,17 @@ a.white:hover {
   margin-top: -6rem; 
   }
   
+  .reveal.large {
+    width: 100%;
+    max-width: 75rem;
+}
+  
 }
 
 /* Up to Medium */
 @media screen and (max-width: 63.9375em) {
-    #bgvid {
+    #bgvid,
+    .mute {
         display: none;
     }
   
@@ -819,6 +850,19 @@ a.white:hover {
 /* Large and up */
 @media screen and (min-width: 64em) {
   
+  body {
+    position: relative;
+  }
+  
+  .mute {
+    position: absolute; 
+    z-index: 10; 
+    top: 30px; 
+    right: 60px;
+    cursor: pointer;
+    display: block;
+  }
+  
   section > div.p1 {
     padding: 2rem;
   }
@@ -843,7 +887,7 @@ a.white:hover {
   .bgimage2 {
   background-repeat: no-repeat; 
   background-size: 50%; 
-  background-position: bottom -1rem right 4rem; 
+  background-position: bottom -1rem right 2rem; 
   background-image: url(../images/50k.png);
 }
   
@@ -881,6 +925,7 @@ a.white:hover {
 }
   
 }
+
 
 /* Large only */
 @media screen and (min-width: 64em) and (max-width: 74.9375em) {}
